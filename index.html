@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#D4AF37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="LUMÈRE JOAILLERIE — Where stones become stories. Haute joaillerie, museum-grade gemstones, and bespoke art jewelry crafted with light and mastery.">
+    <meta name="keywords" content="haute joaillerie, high jewelry, bespoke jewelry, rare gemstones, luxury jewelry, art jewelry, diamond jewelry">
+    <meta property="og:title" content="LUMÈRE JOAILLERIE — Where Stones Become Stories">
+    <meta property="og:description" content="Museum-quality haute joaillerie. Each piece is a sculptural art object crafted with rare gemstones and light mastery.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1200&q=90">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://lumerejoaillerie.com/">
+    <title>LUMÈRE JOAILLERIE — Where Stones Become Stories</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1920&q=90" imagesrcset="https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800&q=90 800w, https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1920&q=90 1920w">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- Icons -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "JewelryStore",
+      "name": "LUMÈRE JOAILLERIE",
+      "description": "Museum-quality haute joaillerie. Each piece is a sculptural art object crafted with rare gemstones and light mastery.",
+      "url": "https://lumerejoaillerie.com",
+      "logo": "https://lumerejoaillerie.com/logo.png",
+      "image": "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1200&q=90",
+      "telephone": "+33 1 42 60 00 00",
+      "email": "atelier@lumerejoaillerie.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "24 Place Vendôme",
+        "addressLocality": "Paris",
+        "postalCode": "75001",
+        "addressCountry": "FR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$$$",
+      "servesCuisine": ["Haute Joaillerie", "Bespoke Jewelry", "High Jewelry"],
+      "sameAs": [
+        "https://instagram.com/lumerejoaillerie",
+        "https://pinterest.com/lumerejoaillerie",
+        "https://linkedin.com/company/lumerejoaillerie"
+      ]
+    }
+    </script>
+</head>
+<body class="light-mode">
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Mode Toggle -->
+    <button class="mode-toggle" aria-label="Toggle light/dark mode">
+        <span class="sr-only">Toggle between light and dark mode</span>
+        <i class="fas fa-sun mode-toggle__icon mode-toggle__icon--light"></i>
+        <i class="fas fa-moon mode-toggle__icon mode-toggle__icon--dark"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="main-nav__container">
+            <a href="#hero" class="main-nav__logo">LUMÈRE</a>
+            
+            <button class="main-nav__toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="main-nav__menu">
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#high-jewelry">High Jewelry</a></li>
+                <li><a href="#bespoke">Bespoke</a></li>
+                <li><a href="#gemstones">Gemstones</a></li>
+                <li><a href="#craft">Craft</a></li>
+                <li><a href="#exhibitions">Exhibitions</a></li>
+                <li><a href="#journal">Journal</a></li>
+                <li><a href="#contact" class="main-nav__cta">Private Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__shimmer"></div>
+            <div class="hero__content">
+                <p class="hero__eyebrow">Jewels Made of Light</p>
+                <h1 class="hero__title">Where Stones<br>Become Stories</h1>
+                <p class="hero__subtitle">Every stone holds a century of light</p>
+                <a href="#collections" class="btn btn-primary">Enter the Maison</a>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span>Explore</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Signature Pieces -->
+        <section class="signature" id="signature">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Signature Pieces</h2>
+                    <p class="section-subtitle">Rare by nature. Refined by mastery.</p>
+                </div>
+                
+                <div class="signature__grid">
+                    <article class="signature__item" data-aos="fade-up">
+                        <div class="signature__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800&q=90" 
+                                 srcset="https://images.unsplash.com/photo-1603561596112-0a132b757442?w=400&q=90 400w,
+                                         https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800&q=90 800w,
+                                         https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1200&q=90 1200w"
+                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                                 alt="Burmese Ruby Ring - Éternelle" 
+                                 class="signature__image signature__image--1" 
+                                 loading="lazy"
+                                 width="800"
+                                 height="800">
+                            <div class="signature__shimmer"></div>
+                        </div>
+                        <div class="signature__content">
+                            <h3 class="signature__name">Éternelle</h3>
+                            <p class="signature__type">Burmese Ruby Ring</p>
+                            <p class="signature__description">A 15-carat pigeon blood ruby, hand-set in platinum. Each facet captures centuries of geological wonder.</p>
+                            <a href="#contact" class="signature__link">Inquire</a>
+                        </div>
+                    </article>
+
+                    <article class="signature__item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="signature__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=90" alt="Diamond Constellation Necklace" class="signature__image signature__image--2" loading="lazy">
+                            <div class="signature__shimmer"></div>
+                        </div>
+                        <div class="signature__content">
+                            <h3 class="signature__name">Lumière Céleste</h3>
+                            <p class="signature__type">Diamond Constellation</p>
+                            <p class="signature__description">47 diamonds totaling 28 carats, sculpted into a celestial dance. Light becomes architecture.</p>
+                            <a href="#contact" class="signature__link">Inquire</a>
+                        </div>
+                    </article>
+
+                    <article class="signature__item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="signature__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=90" alt="Black Diamond Jewelry" class="signature__image signature__image--3" loading="lazy">
+                            <div class="signature__shimmer"></div>
+                        </div>
+                        <div class="signature__content">
+                            <h3 class="signature__name">Obsidian Dream</h3>
+                            <p class="signature__type">Black Diamond Sculpture</p>
+                            <p class="signature__description">Rare black diamonds emerge from shadows. A meditation on darkness and brilliance intertwined.</p>
+                            <a href="#contact" class="signature__link">Inquire</a>
+                        </div>
+                    </article>
+
+                    <article class="signature__item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="signature__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=90" alt="Colombian Emerald" class="signature__image signature__image--4" loading="lazy">
+                            <div class="signature__shimmer"></div>
+                        </div>
+                        <div class="signature__content">
+                            <h3 class="signature__name">Emerald Whisper</h3>
+                            <p class="signature__type">Colombian Emerald Suite</p>
+                            <p class="signature__description">Museum-grade Colombian emeralds, sourced from ancient mines. Green fire frozen in time.</p>
+                            <a href="#contact" class="signature__link">Inquire</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Overview -->
+        <section class="collections" id="collections">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Collections</h2>
+                    <p class="section-subtitle">Four worlds of sculptural luxury</p>
+                </div>
+
+                <div class="collections__grid">
+                    <div class="collection-card" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=90" alt="Lumière Classique Collection" class="collection-card__image collection-card__image--1" loading="lazy">
+                        <div class="collection-card__content">
+                            <h3 class="collection-card__title">Lumière Classique</h3>
+                            <p class="collection-card__description">Timeless elegance where tradition meets contemporary artistry. Each piece echoes eternal beauty.</p>
+                            <a href="#collections" class="collection-card__link">Explore Collection →</a>
+                        </div>
+                    </div>
+
+                    <div class="collection-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=90" alt="Celestial Lines Collection" class="collection-card__image collection-card__image--2" loading="lazy">
+                        <div class="collection-card__content">
+                            <h3 class="collection-card__title">Celestial Lines</h3>
+                            <p class="collection-card__description">Inspired by cosmic geometries. Diamonds arranged like constellations captured in precious metal.</p>
+                            <a href="#collections" class="collection-card__link">Explore Collection →</a>
+                        </div>
+                    </div>
+
+                    <div class="collection-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=90" alt="Sculpted Motion Collection" class="collection-card__image collection-card__image--3" loading="lazy">
+                        <div class="collection-card__content">
+                            <h3 class="collection-card__title">Sculpted Motion</h3>
+                            <p class="collection-card__description">Fluid metal forms that seem to flow. Movement frozen in platinum, sapphires dancing within.</p>
+                            <a href="#collections" class="collection-card__link">Explore Collection →</a>
+                        </div>
+                    </div>
+
+                    <div class="collection-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=90" alt="Haute Lumière Collection" class="collection-card__image collection-card__image--4" loading="lazy">
+                        <div class="collection-card__content">
+                            <h3 class="collection-card__title">Haute Lumière</h3>
+                            <p class="collection-card__description">Museum pieces. Investment-grade rarities. Where jewelry becomes art worthy of exhibition.</p>
+                            <a href="#collections" class="collection-card__link">Explore Collection →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- High Jewelry -->
+        <section class="high-jewelry" id="high-jewelry">
+            <div class="high-jewelry__content">
+                <div class="high-jewelry__text" data-aos="fade-right">
+                    <p class="high-jewelry__eyebrow">High Jewelry</p>
+                    <h2 class="high-jewelry__title">Museum-Grade<br>Masterpieces</h2>
+                    <p class="high-jewelry__description">Each piece in our High Jewelry collection is a singular creation. Museum-quality gemstones, hand-selected for their exceptional clarity, color, and provenance. These are not merely jewelry—they are heirlooms, investments, and works of art destined for private collections.</p>
+                    <ul class="high-jewelry__features">
+                        <li>One-of-a-kind creations</li>
+                        <li>Rare, certified gemstones</li>
+                        <li>Heritage craftsmanship</li>
+                        <li>Investment-grade pieces</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Request Private Viewing</a>
+                </div>
+                <div class="high-jewelry__showcase" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1200&q=90" alt="High Jewelry Masterpiece" class="high-jewelry__image" loading="lazy">
+                    <div class="high-jewelry__spotlight"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bespoke Creations -->
+        <section class="bespoke" id="bespoke">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Bespoke Creations</h2>
+                    <p class="section-subtitle">Your vision. Our mastery. A unique artifact.</p>
+                </div>
+
+                <div class="bespoke__content">
+                    <div class="bespoke__journey">
+                        <div class="bespoke__step" data-aos="fade-up">
+                            <i class="fas fa-comments bespoke__step-icon"></i>
+                            <div class="bespoke__step-number">01</div>
+                            <h3 class="bespoke__step-title">Consultation</h3>
+                            <p class="bespoke__step-description">A private conversation with our master jeweler. We listen to your story, your vision, your dreams.</p>
+                        </div>
+
+                        <div class="bespoke__step" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-gem bespoke__step-icon"></i>
+                            <div class="bespoke__step-number">02</div>
+                            <h3 class="bespoke__step-title">Stone Selection</h3>
+                            <p class="bespoke__step-description">Access our vault of rare gemstones. Each stone with its own history, provenance, and character.</p>
+                        </div>
+
+                        <div class="bespoke__step" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-pencil-ruler bespoke__step-icon"></i>
+                            <div class="bespoke__step-number">03</div>
+                            <h3 class="bespoke__step-title">Design</h3>
+                            <p class="bespoke__step-description">Hand-drawn sketches, 3D renderings. We sculpt your vision into tangible form before metal is touched.</p>
+                        </div>
+
+                        <div class="bespoke__step" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-hammer bespoke__step-icon"></i>
+                            <div class="bespoke__step-number">04</div>
+                            <h3 class="bespoke__step-title">Creation</h3>
+                            <p class="bespoke__step-description">Months of meticulous handwork. Forging, setting, polishing. Your piece comes to life in our atelier.</p>
+                        </div>
+
+                        <div class="bespoke__step" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-crown bespoke__step-icon"></i>
+                            <div class="bespoke__step-number">05</div>
+                            <h3 class="bespoke__step-title">Legacy</h3>
+                            <p class="bespoke__step-description">Your bespoke piece, accompanied by certification, provenance, and a story to pass through generations.</p>
+                        </div>
+                    </div>
+
+                    <div class="bespoke__cta" data-aos="fade-up">
+                        <p>Ready to begin your bespoke journey?</p>
+                        <a href="#contact" class="btn btn-primary">Start Your Commission</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gemstones -->
+        <section class="gemstones" id="gemstones">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Language of Light</h2>
+                    <p class="section-subtitle">Rare gemstones from Earth's deepest treasures</p>
+                </div>
+
+                <div class="gemstones__grid">
+                    <div class="gemstone-card" data-aos="zoom-in">
+                        <div class="gemstone-card__visual gemstone-card__visual--diamond"></div>
+                        <h3 class="gemstone-card__title">Diamond</h3>
+                        <p class="gemstone-card__description">Pure carbon crystallized over billions of years. We source only D-F color, IF-VVS clarity diamonds.</p>
+                    </div>
+
+                    <div class="gemstone-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="gemstone-card__visual gemstone-card__visual--sapphire"></div>
+                        <h3 class="gemstone-card__title">Sapphire</h3>
+                        <p class="gemstone-card__description">Kashmir, Ceylon, Burma. Cornflower blue to royal blue. Each stone certified and untreated.</p>
+                    </div>
+
+                    <div class="gemstone-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="gemstone-card__visual gemstone-card__visual--emerald"></div>
+                        <h3 class="gemstone-card__title">Emerald</h3>
+                        <p class="gemstone-card__description">Colombian emeralds from Muzo and Chivor mines. Vivid green fire with minimal enhancement.</p>
+                    </div>
+
+                    <div class="gemstone-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="gemstone-card__visual gemstone-card__visual--ruby"></div>
+                        <h3 class="gemstone-card__title">Ruby</h3>
+                        <p class="gemstone-card__description">Burmese pigeon blood rubies. The rarest red on Earth, commanding attention and reverence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Art of Craft -->
+        <section class="craft" id="craft">
+            <div class="craft__content">
+                <div class="craft__media" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=1200&q=90" alt="Master Jeweler at Work" class="craft__video-placeholder" loading="lazy">
+                </div>
+                <div class="craft__text" data-aos="fade-left">
+                    <p class="craft__eyebrow">The Art of Craft</p>
+                    <h2 class="craft__title">Mastery in Every<br>Micro-Millimeter</h2>
+                    <p class="craft__description">Our atelier is where art and precision converge. Master jewelers with decades of experience transform rare stones into wearable sculptures. Every cut, every setting, every polish is performed by hand—a meditation on perfection.</p>
+                    
+                    <div class="craft__techniques">
+                        <div class="craft__technique">
+                            <h4>Hand-Forging</h4>
+                            <p>Metal shaped by fire and hammer, not machines.</p>
+                        </div>
+                        <div class="craft__technique">
+                            <h4>Micro-Pavé Setting</h4>
+                            <p>Diamonds set with surgical precision, invisible prongs.</p>
+                        </div>
+                        <div class="craft__technique">
+                            <h4>Stone Cutting</h4>
+                            <p>Custom cuts that maximize light performance.</p>
+                        </div>
+                        <div class="craft__technique">
+                            <h4>Mirror Polishing</h4>
+                            <p>Hours of hand-polishing to achieve flawless surfaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy -->
+        <section class="philosophy">
+            <div class="philosophy__content" data-aos="fade-up">
+                <blockquote class="philosophy__quote">
+                    <p>"Light is the first material."</p>
+                </blockquote>
+                <blockquote class="philosophy__quote">
+                    <p>"We sculpt emotion."</p>
+                </blockquote>
+                <blockquote class="philosophy__quote">
+                    <p>"Elegance begins with silence."</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Exhibitions -->
+        <section class="exhibitions" id="exhibitions">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Exhibitions</h2>
+                    <p class="section-subtitle">Where jewelry meets gallery</p>
+                </div>
+
+                <div class="exhibitions__grid">
+                    <article class="exhibition-card" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&q=90" alt="Paris Exhibition" class="exhibition-card__image exhibition-card__image--1" loading="lazy">
+                        <div class="exhibition-card__content">
+                            <p class="exhibition-card__date">September 2025 • Paris</p>
+                            <h3 class="exhibition-card__title">Lumière: A Retrospective</h3>
+                            <p class="exhibition-card__description">Private salon showcasing 30 years of haute joaillerie mastery at Musée des Arts Décoratifs.</p>
+                        </div>
+                    </article>
+
+                    <article class="exhibition-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1577086664693-894d8405334a?w=800&q=90" alt="Geneva Exhibition" class="exhibition-card__image exhibition-card__image--2" loading="lazy">
+                        <div class="exhibition-card__content">
+                            <p class="exhibition-card__date">November 2025 • Geneva</p>
+                            <h3 class="exhibition-card__title">Sculptural Stones</h3>
+                            <p class="exhibition-card__description">Collaboration with contemporary sculptors. Jewelry as three-dimensional art at Geneva Art Fair.</p>
+                        </div>
+                    </article>
+
+                    <article class="exhibition-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=90" alt="New York Exhibition" class="exhibition-card__image exhibition-card__image--3" loading="lazy">
+                        <div class="exhibition-card__content">
+                            <p class="exhibition-card__date">January 2026 • New York</p>
+                            <h3 class="exhibition-card__title">Light Architecture</h3>
+                            <p class="exhibition-card__description">An immersive installation exploring how light transforms gemstones at MoMA Design Store.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journal -->
+        <section class="journal" id="journal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Journal</h2>
+                    <p class="section-subtitle">Stories from the atelier</p>
+                </div>
+
+                <div class="journal__grid">
+                    <article class="journal-card" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&q=90" alt="Kashmir Sapphire" class="journal-card__image journal-card__image--1" loading="lazy">
+                        <div class="journal-card__content">
+                            <p class="journal-card__category">Behind the Craft</p>
+                            <h3 class="journal-card__title">The Journey of a Kashmir Sapphire</h3>
+                            <p class="journal-card__excerpt">From the Himalayan mines to our atelier—tracing the provenance of one of Earth's rarest stones.</p>
+                            <a href="#journal" class="journal-card__link">Read Story →</a>
+                        </div>
+                    </article>
+
+                    <article class="journal-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=800&q=90" alt="Master Jeweler Pierre" class="journal-card__image journal-card__image--2" loading="lazy">
+                        <div class="journal-card__content">
+                            <p class="journal-card__category">Master Series</p>
+                            <h3 class="journal-card__title">Meet Pierre: 40 Years of Micro-Pavé</h3>
+                            <p class="journal-card__excerpt">An intimate conversation with our master setter about precision, patience, and perfection.</p>
+                            <a href="#journal" class="journal-card__link">Read Story →</a>
+                        </div>
+                    </article>
+
+                    <article class="journal-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&q=90" alt="Design Process" class="journal-card__image journal-card__image--3" loading="lazy">
+                        <div class="journal-card__content">
+                            <p class="journal-card__category">Design Philosophy</p>
+                            <h3 class="journal-card__title">Sculpting Light: Our Design Process</h3>
+                            <p class="journal-card__excerpt">How we transform concepts into wearable art through sketches, CAD, and countless iterations.</p>
+                            <a href="#journal" class="journal-card__link">Read Story →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Private Consultation -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__content">
+                    <div class="contact__info" data-aos="fade-right">
+                        <h2 class="contact__title">Private Consultation</h2>
+                        <p class="contact__description">Begin your journey with LUMÈRE. Whether commissioning a bespoke piece, inquiring about high jewelry, or seeking investment-grade stones, we invite you to a private consultation.</p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <h4>Atelier Address</h4>
+                                <p>24 Place Vendôme<br>75001 Paris, France</p>
+                            </div>
+                            <div class="contact__detail">
+                                <h4>By Appointment</h4>
+                                <p>Monday - Saturday<br>10:00 - 18:00 CET</p>
+                            </div>
+                            <div class="contact__detail">
+                                <h4>Contact</h4>
+                                <p>+33 1 42 60 00 00<br>atelier@lumerejoaillerie.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" data-aos="fade-left">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">Interest</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Please select</option>
+                                <option value="bespoke">Bespoke Creation</option>
+                                <option value="high-jewelry">High Jewelry Inquiry</option>
+                                <option value="collection">Collection Piece</option>
+                                <option value="investment">Investment Stones</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                        
+                        <p class="contact__form-note">All inquiries are treated with the utmost discretion and confidentiality.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__brand">
+                <h3 class="footer__logo">LUMÈRE JOAILLERIE</h3>
+                <p class="footer__tagline">Where Stones Become Stories</p>
+            </div>
+            
+            <div class="footer__links">
+                <div class="footer__column">
+                    <h4>Maison</h4>
+                    <ul>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#high-jewelry">High Jewelry</a></li>
+                        <li><a href="#bespoke">Bespoke</a></li>
+                        <li><a href="#craft">Atelier</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h4>Discover</h4>
+                    <ul>
+                        <li><a href="#gemstones">Gemstones</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
+                        <li><a href="#journal">Journal</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <p>&copy; 2025 LUMÈRE JOAILLERIE. All rights reserved.</p>
+            <p class="footer__legal">
+                <a href="#">Privacy Policy</a> • 
+                <a href="#">Terms of Service</a> • 
+                <a href="#">Authenticity Guarantee</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

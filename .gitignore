@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# QA outputs (development only)
+qa/
+
+# Factory system files (development only)
+prompts/
+COMMANDS_CHEATSHEET.txt
+FACTORY_GUIDE.md
+QUICK_START.md
+AI_TEAM_GUIDE.md
+factory.config.json
+brief.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Build outputs
+dist/
+build/
+*.log
