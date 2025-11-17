@@ -1,0 +1,32 @@
+{
+  "name": "ai-website-factory",
+  "version": "1.0.0",
+  "description": "AI-powered premium website generation factory with automated QA",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000 -c-1 --cors",
+    "qa:screens": "node qa/screenshot.js",
+    "qa:lighthouse": "node qa/lighthouse.js",
+    "qa:all": "npm run qa:screens && npm run qa:lighthouse",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "website",
+    "ai",
+    "factory",
+    "qa",
+    "lighthouse",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^12.2.1",
+    "playwright": "^1.56.1",
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

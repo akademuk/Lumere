@@ -25,10 +25,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <!-- Preload critical resources -->
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1920&q=90" imagesrcset="https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800&q=90 800w, https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1920&q=90 1920w">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- Non-blocking Google Fonts with display=swap and subset -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@400;500&display=swap&subset=latin" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@400;500&display=swap&subset=latin"></noscript>
     
     <!-- Icons -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -144,7 +149,8 @@
                                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                                  alt="Burmese Ruby Ring - Éternelle" 
                                  class="signature__image signature__image--1" 
-                                 loading="lazy"
+                                 loading="eager"
+                                 fetchpriority="high"
                                  width="800"
                                  height="800">
                             <div class="signature__shimmer"></div>
